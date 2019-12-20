@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>simcity</display-name>
+	<servlet>
+    	<servlet-name>Init</servlet-name>
+    	<servlet-class>Init</servlet-class>
+	</servlet>
+	<servlet-mapping>
+    	<servlet-name>Init</servlet-name>
+    	<url-pattern>/init</url-pattern>  <!-- This is the URL of the servlet. -->
+	</servlet-mapping>
+	
+	<servlet>
+    	<servlet-name>Index</servlet-name>
+    	<servlet-class>Index</servlet-class>
+	</servlet>
+	<servlet-mapping>
+    	<servlet-name>Index</servlet-name>
+    	<url-pattern>/</url-pattern>  <!-- This is the URL of the servlet. -->
+	</servlet-mapping>
+	
+	<servlet>
+    	<servlet-name>Turn</servlet-name>
+    	<servlet-class>Turn</servlet-class>
+	</servlet>
+	<servlet-mapping>
+    	<servlet-name>Turn</servlet-name>
+    	<url-pattern>/turn</url-pattern>  <!-- This is the URL of the servlet. -->
+	</servlet-mapping>
+	
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+</web-app>
